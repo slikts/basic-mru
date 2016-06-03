@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "basic-mru",
+  "description": "Foo",
+  "version": "0.1.0",
+  "permissions": ["tabs"],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_title": "Hello",
+    "default_popup": "popup.html"
+  },
+  "background":{
+    "scripts" : ["common.js", "background.js"]
+  },
+  "commands": {
+    "prev": {
+      "suggested_key": {
+        "default": "Alt+S"
+      },
+      "description": "Switch back"
+    },
+    "next": {
+      "suggested_key": {
+        "default": "Alt+W"
+      },
+      "description": "Switch forward"
+    },
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+Q"
+      },
+      "description": "Foo"
+    }
+  }
+}

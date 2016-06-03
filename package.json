@@ -1,0 +1,49 @@
+{
+  "name": "mru-is-better",
+  "version": "0.0.0",
+  "description": "Chrome extension for switching tabs in the MRU order with Ctrl+Tab",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "browserify -d src/content.js src/popup.js src/background.js src/switcher.js -p [ factor-bundle -o dist/content.js -o dist/popup.js -o dist/background.js -o dist/switcher.js ] -t [ babelify ] -o dist/common.js",
+    "watch:bundle": "nodemon -x \"npm run bundle\" -w src",
+    "test": "babel-tape-runner test/*.js",
+    "watch:test": "nodemon -x \"npm run test\" -i dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:slikts/mru-is-better.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "mru",
+    "tab",
+    "switching",
+    "productivity"
+  ],
+  "bugs": {
+    "url": "https://github.com/slikts/mru-is-better/issues"
+  },
+  "homepage": "https://github.com/slikts/mru-is-better#readme",
+  "author": "slikts <dabas@untu.ms>",
+  "license": "MIT",
+  "dependencies": {
+    "CollectionMap": "^1.0.2",
+    "circulator": "^1.0.3",
+    "object.entries": "^1.0.3",
+    "promiseproxy-chrome": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-strict-mode": "^6.8.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-tape-runner": "^2.0.1",
+    "babelify": "^7.3.0",
+    "browserify": "latest",
+    "eslint": "^2.11.0",
+    "factor-bundle": "^2.5.0",
+    "sinon-chrome": "^1.1.2",
+    "tape": "^4.5.1"
+  }
+}

@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-user-select: none;
+}
+body {
+  max-width: 320px;
+  margin: auto;
+}
+ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.favicon {
+  vertical-align: middle;
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
+}
+.url {
+  padding-left: 21px;
+  margin: 0;
+  cursor: default;
+  display: none;
+}
+.title {
+  cursor: default;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+.tab {
+  padding: 4px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+}
+.tab.active,
+.tab:hover {
+  background: rgba(0, 0, 255, .25);
+  border: 1px solid rgba(0, 0, 255, .35);
+}
+.tab.active .url,
+.tab:hover .url {
+  xdisplay: block;
+}
+li:first-child {
+  background: #eee;
+}
+li:first-child .title {
+  margin-top: 0;
+}
+#switcher {
+  background: #fff;
+  padding-bottom: 1px;
+  border-radius: 2px;
+}
