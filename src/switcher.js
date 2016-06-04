@@ -1,6 +1,6 @@
 const switcher = require('./_switcher')
 
-switcher(1).then(({dom, cycle}) => {
+switcher((_, i) => i).then(({dom, cycle}) => {
   document.body.appendChild(dom)
 
   chrome.extension.onMessage.addListener((key, _, respond) => {

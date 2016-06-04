@@ -10,8 +10,8 @@ p {
   overflow: hidden;
   -webkit-user-select: none;
 }
-body {
-  max-width: 320px;
+html {
+  width: 300px;
   margin: auto;
 }
 ol, li {
@@ -33,8 +33,7 @@ ol, li {
 }
 .title {
   cursor: default;
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 12px;
   margin: 0;
 }
 .tab {
@@ -42,17 +41,21 @@ ol, li {
   border: 1px solid transparent;
   border-radius: 1px;
 }
-.tab.active,
+.tab.selected {
+  background: rgba(56, 121, 217, 1);
+  /*border: 1px solid rgba(0, 0, 255, .35);*/
+}
 .tab:hover {
-  background: rgba(0, 0, 255, .25);
-  border: 1px solid rgba(0, 0, 255, .35);
+  background: rgba(59, 70, 217, 0.25);
+  background: #ebf2fc;
 }
-.tab.active .url,
+/*.tab.selected .url,
 .tab:hover .url {
-  xdisplay: block;
-}
-li:first-child {
-  background: #eee;
+  position: absolute;
+  display: block;
+}*/
+.tab.active {
+  background: #dadada;
 }
 li:first-child .title {
   margin-top: 0;

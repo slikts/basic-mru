@@ -2,12 +2,15 @@
 <html>
 <head>
   <title>Hello</title>
-  <link rel="stylesheet" href="switcher.css">
   <link rel="stylesheet" href="popup.css">
   <script src="common.js" defer></script>
   <script src="popup.js" defer></script>
 </head>
 <body>
-  <input id="filter">
+  <div class="filter">
+    <input id="filter" type="search" value="" placeholder="Filter tabs by title">
+  </div>
+  <h1 class="cat-title">Open tabs</h1>
+  <div id="wrapper"></div>
 </body>
 </html>
