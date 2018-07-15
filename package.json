@@ -34,16 +34,16 @@
     "promiseproxy-chrome": "^1.0.3"
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.4",
+    "babel-eslint": "^8.2.6",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-plugin-transform-strict-mode": "^6.8.0",
     "babel-polyfill": "^6.9.1",
     "babel-tape-runner": "^2.0.1",
-    "babelify": "^7.3.0",
+    "babelify": "^8.0.0",
     "browserify": "latest",
-    "eslint": "^2.11.0",
+    "eslint": "^5.1.0",
     "factor-bundle": "^2.5.0",
-    "sinon-chrome": "^1.1.2",
+    "sinon-chrome": "^2.3.2",
     "tape": "^4.5.1"
   }
 }
